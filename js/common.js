@@ -8,9 +8,11 @@ $(function(){
     var url = 'http://www.'+site+'1985.xyz:8080/get_'+part+'/'+id;
     $.get(url, function(data){
         if(data.state=='success'){
+            document.title = data.article.title;
             $('#article_tit').html(data.article.title);
             $('#article_con').html(data.article.content);
         }else{
+            document.title = data.article.title;
             $('#article_tit').html(data.article.title);
             $('#article_con').html(data.article.content);
         }
