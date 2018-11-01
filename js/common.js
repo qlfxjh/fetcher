@@ -17,22 +17,22 @@ $(function(){
 //    });
     //var file = $iptFile.val();
     
-    var httpRequest = new XMLHttpRequest();
-    httpRequest.open("GET",url);
-    httpRequest.onreadystatechange = handleFetchResponse;
-    httpRequest.send();
+//    var httpRequest = new XMLHttpRequest();
+//    httpRequest.open("GET",url);
+//    httpRequest.onreadystatechange = handleFetchResponse;
+//    httpRequest.send();
     
     
 });
-
-function handleFetchResponse(){
-    if(httpRequest.readyState == 4 && httpRequest.status == 200){
-        var resData = httpRequest.responseText;
-        console.dir(resData);
-        $('#article_tit').html(data.article.title);
-        $('#article_con').html(data.article.content);
-    }
-}
+//
+//function handleFetchResponse(){
+//    if(httpRequest.readyState == 4 && httpRequest.status == 200){
+//        var resData = httpRequest.responseText;
+//        console.dir(resData);
+//        $('#article_tit').html(data.article.title);
+//        $('#article_con').html(data.article.content);
+//    }
+//}
 
 
 
